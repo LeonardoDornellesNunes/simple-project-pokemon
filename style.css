@@ -3,3 +3,39 @@
     padding: 0px;
     margin: 0px;
 }
+
+body {
+    height: 900px;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.box-sprite {
+    height: 100%;
+    width: 100%;
+
+    grid-area: 2/3/3/4;
+
+    border: 1px solid black;
+}
+
+.box-sprite .sprite {
+    height: 90%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 1px solid black;
+}
+
+.box-sprite .button-next {
+    height: 10%;
+    width: 100%;
+
+    border-radius: 0px;
+}
